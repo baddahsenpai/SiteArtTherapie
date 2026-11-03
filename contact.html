@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Prendre rendez-vous en art-thérapie</title>
+  <meta name="description" content="Contactez l'art-thérapeute certifiée pour poser vos questions ou prendre rendez-vous pour une séance individuelle ou un atelier de groupe.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navigation principale">
+      <a class="brand" href="index.html">🌿 Art-thérapie</a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="art-therapie.html">L'art-thérapie</a></li>
+        <li><a href="seances.html">Les séances</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="contact.html" class="nav-cta active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container page">
+    <h1>Contact &amp; prise de rendez-vous</h1>
+    <p>
+      Une question, une envie d'en savoir plus, ou simplement besoin de parler&nbsp;?
+      Remplissez ce formulaire — je vous répondrai rapidement et en toute confidentialité.
+      Vous pouvez aussi me contacter directement par e-mail.
+    </p>
+
+    <div class="split">
+      <form class="contact-form" action="mailto:contact@exemple.fr" method="post" enctype="text/plain" id="contact-form">
+        <div class="field">
+          <label for="nom">Nom</label>
+          <input type="text" id="nom" name="nom" required autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="sujet">Sujet</label>
+          <select id="sujet" name="sujet">
+            <option>Séance individuelle</option>
+            <option>Atelier de groupe</option>
+            <option>Accompagnement spécifique</option>
+            <option>Une simple question</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+        <p class="rgpd">
+          Vos données ne servent qu'à répondre à votre demande et ne sont jamais transmises à des tiers.
+        </p>
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+      </form>
+
+      <aside class="highlight-box">
+        <h3>Informations pratiques</h3>
+        <p><strong>E-mail :</strong> contact@exemple.fr</p>
+        <p><strong>Téléphone :</strong> 06 00 00 00 00</p>
+        <p><strong>Cabinet :</strong> adresse du cabinet, ville</p>
+        <p><strong>Horaires :</strong> du lundi au samedi, sur rendez-vous</p>
+        <p class="disclaimer">
+          En cas d'urgence ou de détresse, contactez le 3114 (numéro national de prévention du suicide,
+          24h/24, gratuit) ou le 15.
+        </p>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Art-thérapie — Tous droits réservés.</p>
+      <p class="disclaimer">
+        L'art-thérapie est un accompagnement complémentaire et ne remplace pas un suivi médical ou psychologique.
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
